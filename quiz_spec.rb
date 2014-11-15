@@ -32,4 +32,16 @@ describe Solver do
     it "return 55 when summing up to 10 " do
         expect(s.sum_up_to(10)).to eq 55
     end
+    
+    it "find a solution: a size of problem == 10" do
+        q = Quiz.new(10)
+        
+        expect(s.solve(q.v, 10)).to eq q.sol
+    end
+
+    it "find a solution: a size of problem == 10000" do
+        q = Quiz.new(10000)
+        
+        expect(s.solve(q.v, 10000)).to eq q.sol
+    end
 end
