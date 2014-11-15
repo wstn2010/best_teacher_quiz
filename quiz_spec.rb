@@ -39,6 +39,12 @@ describe Solver do
         expect(s.solve(q.v, 10)).to eq q.sol
     end
 
+    it "return 1 for empty array" do
+        q = Quiz.new(1)
+    
+        expect(s.solve(q.v, 1)).to eq 1
+    end
+
     it "find a solution: a size of problem == 10000" do
         q = Quiz.new(10000)
         
