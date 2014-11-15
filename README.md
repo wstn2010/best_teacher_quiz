@@ -1,2 +1,2 @@
-best_teacher_challenge
+best_teacher_quiz
 ======================
